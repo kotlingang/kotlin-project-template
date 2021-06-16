@@ -1,5 +1,5 @@
 plugins {
-    // k-mpp, k-js or k-jvm
+    // k-mpp, k-js, k-jvm, k-android-app or k-android-library
     id(`k-jvm`)
 }
 
