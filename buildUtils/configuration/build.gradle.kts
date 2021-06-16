@@ -23,7 +23,7 @@ gradlePlugin {
         id = "k-jvm"
         implementationClass = "KotlinJvmConfiguration"
     }
-    plugins.register("k-s") {
+    plugins.register("k-js") {
         id = "k-js"
         implementationClass = "KotlinJvmConfiguration"
     }
