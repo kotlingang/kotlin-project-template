@@ -30,7 +30,7 @@ gradlePlugin {
     }
     plugins.register("k-js") {
         id = "k-js"
-        implementationClass = "KotlinJvmConfiguration"
+        implementationClass = "KotlinJsConfiguration"
     }
     // Uncomment when using android
 //    plugins.register("k-android-app") {
