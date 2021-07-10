@@ -61,5 +61,9 @@ object Deps {
             const val Id = "org.jetbrains.kotlin.plugin.serialization"
             const val Classpath = "org.jetbrains.kotlin:kotlin-serialization:$kotlinVersion"
         }
+        object Ssh {
+            const val Id = "org.hidetake.ssh"
+            const val Classpath = "org.hidetake:gradle-ssh-plugin:$sshVersion"
+        }
     }
 }
