@@ -57,5 +57,9 @@ object Deps {
             const val Library = "com.android.library"
             const val Classpath = "com.android.tools.build:gradle:$androidGradlePluginVersion"
         }
+        object Serialization {
+            const val Id = "org.jetbrains.kotlin.plugin.serialization"
+            const val Classpath = "org.jetbrains.kotlin:kotlin-serialization:$kotlinVersion"
+        }
     }
 }
