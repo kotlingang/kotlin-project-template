@@ -76,5 +76,15 @@ object Deps {
             const val Id = "org.hidetake.ssh"
             const val Classpath = "org.hidetake:gradle-ssh-plugin:$sshVersion"
         }
+        object Publish {
+            const val Id = "publish"
+            const val Classpath = "publish:publish:SNAPSHOT"
+        }
+        object MavenPublish {
+            const val Id = "maven-publish"
+        }
+        object Application {
+            const val Id = "application"
+        }
     }
 }
