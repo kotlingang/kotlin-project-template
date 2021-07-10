@@ -4,8 +4,8 @@ import org.gradle.api.Project
 
 class KotlinAndroidLibraryConfiguration : Plugin<Project> {
     override fun apply(target: Project) {
-        target.plugins.apply(Dependencies.Android.Library)
-        target.plugins.apply(Dependencies.Kotlin.Android)
-        target.plugins.apply("dependencies")
+        target.plugins.apply(Deps.Plugins.Android.Library)
+        target.plugins.apply(Deps.Plugins.Kotlin.Android)
+        target.plugins.apply(Deps.Plugins.Dependencies.Id)
     }
 }

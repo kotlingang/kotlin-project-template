@@ -4,7 +4,7 @@ import org.gradle.api.Project
 
 class KotlinMultiplatformConfiguration : Plugin<Project> {
     override fun apply(target: Project) {
-        target.plugins.apply(Dependencies.Kotlin.Multiplatform)
-        target.plugins.apply("dependencies")
+        target.plugins.apply(Deps.Plugins.Kotlin.Multiplatform)
+        target.plugins.apply(Deps.Plugins.Dependencies.Id)
     }
 }

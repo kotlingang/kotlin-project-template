@@ -1,21 +1,56 @@
-@file:Suppress("FunctionName", "MemberVisibilityCanBePrivate")
+@file:Suppress("FunctionName", "unused")
 
-object Dependencies {
-    const val Self = "dependencies:dependencies:SNAPSHOT"
+object Deps {
+    private const val kotlinVersion = "1.5.0"
+    private const val coroutinesVersion = "1.5.0"
+    private const val serializationVersion = "1.2.2"
+    private const val nodejsExternalsVersion = "0.0.7"
+    private const val ktorVersion = "1.6.0"
+    private const val exposedVersion = "0.32.1"
 
-    object Kotlin {
-        val Plugin = Plugin()
-        fun Plugin(version: String = Version.KOTLIN) = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
+    private const val postgresqlVersion = "42.2.23"
+    private const val slf4jJVersion = "1.7.31"
 
-        const val Multiplatform = "org.jetbrains.kotlin.multiplatform"
-        const val Jvm = "org.jetbrains.kotlin.jvm"
-        const val Js = "org.jetbrains.kotlin.js"
-        const val Android = "org.jetbrains.kotlin.android"
+    private const val androidGradlePluginVersion = "4.2.0"
+
+    object Libs {
+        object Kotlinx {
+            const val Coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}"
+            const val Serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:${serializationVersion}"
+            const val Nodejs = "org.jetbrains.kotlinx:kotlinx-nodejs:${nodejsExternalsVersion}"
+        }
+        object Ktor {
+            const val Core = "io.ktor:ktor-client-core:${ktorVersion}"
+            const val Cio = "io.ktor:ktor-client-cio:${ktorVersion}"
+            const val Serialization = "io.ktor:ktor-client-serialization:${ktorVersion}"
+        }
+        object Exposed {
+            const val Core = "org.jetbrains.exposed:exposed-core:${exposedVersion}"
+            const val Jdbc = "org.jetbrains.exposed:exposed-jdbc:${exposedVersion}"
+        }
+        object Postgres {
+            const val Driver = "org.postgresql:postgresql:${postgresqlVersion}"
+        }
+        object Slf4j {
+            const val Simple = "org.slf4j:slf4j-simple:${slf4jJVersion}"
+        }
     }
-
-    object Android {
-        const val Plugin = "com.android.tools.build:gradle:${Version.ANDROID_GRADLE_PLUGIN}"
-        const val Application = "com.android.application"
-        const val Library = "com.android.library"
+    object Plugins {
+        object Dependencies {
+            const val Id = "dependencies"
+            const val Classpath = "dependencies:dependencies:SNAPSHOT"
+        }
+        object Kotlin {
+            const val Multiplatform = "org.jetbrains.kotlin.multiplatform"
+            const val Jvm = "org.jetbrains.kotlin.jvm"
+            const val Js = "org.jetbrains.kotlin.js"
+            const val Android = "org.jetbrains.kotlin.android"
+            const val Classpath = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        }
+        object Android {
+            const val Application = "com.android.application"
+            const val Library = "com.android.library"
+            const val Classpath = "com.android.tools.build:gradle:$androidGradlePluginVersion"
+        }
     }
 }
