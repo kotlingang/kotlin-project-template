@@ -42,7 +42,7 @@ object Deps {
             const val Time = "org.jetbrains.exposed:exposed-java-time:$exposedVersion"
         }
         object Postgres {
-            const val Driver = "org.postgresql:postgresql:$postgresqlVersion"
+            const val Jdbc = "org.postgresql:postgresql:$postgresqlVersion"
         }
         object Logback {
             const val Classic = "ch.qos.logback:logback-classic:jar:$logbackVersion"    
