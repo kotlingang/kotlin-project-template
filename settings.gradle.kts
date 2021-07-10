@@ -1,8 +1,7 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        // Uncomment when using android
-//        google()
+        google()
     }
 }
 

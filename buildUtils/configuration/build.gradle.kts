@@ -9,14 +9,9 @@ repositories {
 }
 
 dependencies {
-    implementation(Dependencies.Self)
-
-    // Uncomment when using android
-//    implementation(Dependencies.Android.Plugin)
-
-    // Used to prevent classpath conflicts
-    compileOnly(Dependencies.Kotlin.Plugin(version = "1.4.20"))
-    runtimeOnly(Dependencies.Kotlin.Plugin)
+    implementation(Deps.Plugins.Dependencies.Classpath)
+    implementation(Deps.Plugins.Android.Classpath)
+    implementation(Deps.Plugins.Kotlin.Classpath)
 }
 
 gradlePlugin {
@@ -32,13 +27,12 @@ gradlePlugin {
         id = "k-js"
         implementationClass = "KotlinJsConfiguration"
     }
-    // Uncomment when using android
-//    plugins.register("k-android-app") {
-//        id = "k-android-app"
-//        implementationClass = "KotlinAndroidApplicationConfiguration"
-//    }
-//    plugins.register("k-android-library") {
-//        id = "k-android-library"
-//        implementationClass = "KotlinAndroidLibraryConfiguration"
-//    }
+    plugins.register("k-android-app") {
+        id = "k-android-app"
+        implementationClass = "KotlinAndroidApplicationConfiguration"
+    }
+    plugins.register("k-android-library") {
+        id = "k-android-library"
+        implementationClass = "KotlinAndroidLibraryConfiguration"
+    }
 }
