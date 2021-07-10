@@ -12,6 +12,7 @@ object Deps {
 
     private const val postgresqlVersion = "42.2.23"
     private const val slf4jJVersion = "1.7.31"
+    private const val logbackVersion = "0.9.26"
 
     private const val androidGradlePluginVersion = "4.2.0"
 
@@ -23,10 +24,17 @@ object Deps {
             const val Nodejs = "org.jetbrains.kotlinx:kotlinx-nodejs:$nodejsExternalsVersion"
         }
         object Ktor {
-            const val Core = "io.ktor:ktor-client-core:$ktorVersion"
-            const val Cio = "io.ktor:ktor-client-cio:$ktorVersion"
-            const val Serialization = "io.ktor:ktor-client-serialization:$ktorVersion"
-            const val Openapi = "com.github.papsign:Ktor-OpenAPI-Generator:$ktorOpenapiVersion"
+            object Client {
+                const val Core = "io.ktor:ktor-client-core:$ktorVersion"
+                const val Cio = "io.ktor:ktor-client-cio:$ktorVersion"
+                const val Serialization = "io.ktor:ktor-client-serialization:$ktorVersion"
+            }
+            object Server {
+                const val Core = "io.ktor:ktor-server-core:$ktorVersion"
+                const val Cio = "io.ktor:ktor-server-cio:$ktorVersion"
+                const val Serialization = "io.ktor:ktor-serialization:$ktorVersion"
+                const val Openapi = "com.github.papsign:Ktor-OpenAPI-Generator:$ktorOpenapiVersion"
+            }
         }
         object Exposed {
             const val Core = "org.jetbrains.exposed:exposed-core:$exposedVersion"
@@ -35,6 +43,9 @@ object Deps {
         }
         object Postgres {
             const val Driver = "org.postgresql:postgresql:$postgresqlVersion"
+        }
+        object Logback {
+            const val Classic = "ch.qos.logback:logback-classic:jar:$logbackVersion"    
         }
         object Slf4j {
             const val Simple = "org.slf4j:slf4j-simple:$slf4jJVersion"
