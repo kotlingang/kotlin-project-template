@@ -45,7 +45,7 @@ object Deps {
             const val Jdbc = "org.postgresql:postgresql:$postgresqlVersion"
         }
         object Logback {
-            const val Classic = "ch.qos.logback:logback-classic:jar:$logbackVersion"    
+            const val Classic = "ch.qos.logback:logback-classic:$logbackVersion"    
         }
         object Slf4j {
             const val Simple = "org.slf4j:slf4j-simple:$slf4jJVersion"
