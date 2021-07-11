@@ -13,6 +13,7 @@ object Deps {
     private const val postgresqlVersion = "42.2.23"
     private const val slf4jJVersion = "1.7.31"
     private const val logbackVersion = "0.9.26"
+    private const val sshVersion = "2.10.1"
 
     private const val androidGradlePluginVersion = "4.2.0"
 
