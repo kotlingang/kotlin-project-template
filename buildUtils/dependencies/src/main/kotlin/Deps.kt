@@ -14,6 +14,14 @@ object Deps {
     private const val slf4jJVersion = "1.7.31"
     private const val logbackVersion = "0.9.26"
     private const val sshVersion = "2.10.1"
+    
+    private const val materialVersion = "1.2.1"
+    private const val recyclerViewVersion = "1.1.0"
+    private const val swipeRefreshLayoutVersion = "1.1.0"
+    private const val constraintLayoutVersion = "2.0.0"
+    private const val lifecycleVersion = "2.2.0"
+    private const val glideVersion = "4.12.0"
+    private const val androidAppCompatVersion = "1.1.0"
 
     private const val androidGradlePluginVersion = "4.2.0"
 
@@ -50,6 +58,31 @@ object Deps {
         }
         object Slf4j {
             const val Simple = "org.slf4j:slf4j-simple:$slf4jJVersion"
+        }
+        object Androidx {
+            const val AppCompat =
+                "androidx.appcompat:appcompat:$androidAppCompatVersion"
+            const val Material =
+                "com.google.android.material:material:$materialVersion"
+            const val RecyclerView =
+                "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+            const val SwipeRefreshLayout =
+                "androidx.swiperefreshlayout:swiperefreshlayout:$swipeRefreshLayoutVersion"
+            const val ConstraintLayout =
+                "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+            const val Lifecycle =
+                "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
+            const val LifecycleKtx =
+                "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
+        }
+        object Bumtech {
+            const val Glide =
+                "com.github.bumptech.glide:glide:$glideVersion"
+        }
+    }
+    object Kapt {
+        object Bumtech {
+            const val Glide = "com.github.bumptech.glide:compiler:$glideVersion"
         }
     }
     object Plugins {
