@@ -1,9 +1,13 @@
 @file:Suppress("FunctionName", "unused")
 
 object Deps {
+    const val compileSdkVersion = 30
+    const val minSdkVersion = 21
+    
     private const val kotlinVersion = "1.5.0"
     private const val coroutinesVersion = "1.5.0"
     private const val serializationVersion = "1.2.2"
+    const val serializationPluginVersion = "1.5.21"
     private const val nodejsExternalsVersion = "0.0.7"
     private const val ktorVersion = "1.6.0"
     private const val ktorOpenapiVersion = "0.2-beta.18"
