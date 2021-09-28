@@ -4,31 +4,63 @@ object Deps {
     const val compileSdkVersion = 30
     const val minSdkVersion = 21
     
-    private const val kotlinVersion = "1.5.0"
-    private const val coroutinesVersion = "1.5.0"
-    private const val serializationVersion = "1.2.2"
+    private const val kotlinVersion = "1.5.31"
+    private const val coroutinesVersion = "1.5.2"
+    private const val serializationVersion = "1.3.0"
     private const val nodejsExternalsVersion = "0.0.7"
-    private const val ktorVersion = "1.6.0"
-    private const val ktorOpenapiVersion = "0.2-beta.18"
-    private const val exposedVersion = "0.32.1"
-    private const val datetimeVersion = "0.2.1"
+    private const val ktorVersion = "1.6.3"
+    private const val ktorOpenapiVersion = "0.2-beta.20"
+    private const val exposedVersion = "0.35.1"
+    private const val datetimeVersion = "0.3.0"
 
-    private const val postgresqlVersion = "42.2.23"
-    private const val slf4jJVersion = "1.7.31"
-    private const val logbackVersion = "0.9.26"
+    private const val postgresqlVersion = "42.2.24"
+    private const val slf4jJVersion = "1.7.32"
+    private const val logbackVersion = "1.2.6"
     private const val sshVersion = "2.10.1"
     
-    private const val materialVersion = "1.2.1"
-    private const val recyclerViewVersion = "1.1.0"
-    private const val swipeRefreshLayoutVersion = "1.1.0"
-    private const val constraintLayoutVersion = "2.0.0"
-    private const val lifecycleVersion = "2.2.0"
+    private const val materialVersion = "1.5.0-alpha03"
+    private const val recyclerViewVersion = "1.3.0-alpha01"
+    private const val swipeRefreshLayoutVersion = "1.2.0"
+    private const val constraintLayoutVersion = "2.1.0"
+    private const val lifecycleVersion = "2.3.1"
     private const val glideVersion = "4.12.0"
-    private const val androidAppCompatVersion = "1.1.0"
+    private const val androidAppCompatVersion = "1.3.1"
+    private const val androidComposeVersion = "1.1.0-alpha04"
+    private const val androidGradlePluginVersion = "4.2.2"
 
-    private const val androidGradlePluginVersion = "4.2.0"
+    private const val kvisionVersion = "5.1.1"
+    private const val shadowVer = "7.0.0"
 
     object Libs {
+        object KVision {
+            const val Core = "io.kvision:kvision:$kvisionVersion"
+
+            object Bootstrap {
+                const val Core = "io.kvision:kvision-bootstrap:$kvisionVersion"
+                const val Css = "io.kvision:kvision-bootstrap-css:$kvisionVersion"
+                const val DateTime = "io.kvision:kvision-bootstrap-datetime:$kvisionVersion"
+                const val Select = "io.kvision:kvision-bootstrap-select:$kvisionVersion"
+                const val Spinner = "io.kvision:kvision-bootstrap-spinner:$kvisionVersion"
+                const val Upload = "io.kvision:kvision-bootstrap-upload:$kvisionVersion"
+                const val Dialog = "io.kvision:kvision-bootstrap-dialog:$kvisionVersion"
+                const val Typeahead = "io.kvision:kvision-bootstrap-typeahead:$kvisionVersion"
+            }
+
+            const val FontAwesome = "io.kvision:kvision-fontawesome:$kvisionVersion"
+            const val i18n = "io.kvision:kvision-i18n:$kvisionVersion"
+            const val RichText = "io.kvision:kvision-richtext:$kvisionVersion"
+            const val Handlebars = "io.kvision:kvision-handlebars:$kvisionVersion"
+            const val DataContainer = "io.kvision:kvision-datacontainer:$kvisionVersion"
+            const val Chart = "io.kvision:kvision-chart:$kvisionVersion"
+            const val Tabulator = "io.kvision:kvision-tabulator:$kvisionVersion"
+            const val Pace = "io.kvision:kvision-pace:$kvisionVersion"
+            const val Toast = "io.kvision:kvision-toast:$kvisionVersion"
+            const val React = "io.kvision:kvision-react:$kvisionVersion"
+            const val Navigo = "io.kvision:kvision-routing-navigo:$kvisionVersion"
+            const val State = "io.kvision:kvision-state:$kvisionVersion"
+            const val Rest = "io.kvision:kvision-rest:$kvisionVersion"
+        }
+
         object Kotlinx {
             const val Coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
             const val Serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion"
@@ -77,6 +109,17 @@ object Deps {
                 "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
             const val LifecycleKtx =
                 "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
+
+            object Compose {
+                const val UI = "androidx.compose.ui:ui:$androidComposeVersion"
+                const val UITooling = "androidx.compose.ui:ui-tooling:$androidComposeVersion"
+                const val Foundation = "androidx.compose.foundation:foundation:$androidComposeVersion"
+                const val Material = "androidx.compose.material:material:$androidComposeVersion"
+                const val Icons = "androidx.compose.material:material-icons-core:$androidComposeVersion"
+                const val ExtendedIcons = "androidx.compose.material:material-icons-extended:$androidComposeVersion"
+                const val JUnitTests = "androidx.compose.ui:ui-test-junit4:$androidComposeVersion"
+                const val Activity = "androidx.activity:activity-compose:1.4.0-alpha02"
+            }
         }
         object Bumtech {
             const val Glide =
