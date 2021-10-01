@@ -157,7 +157,7 @@ object Deps {
         object Android {
             const val Application = "com.android.application"
             const val Library = "com.android.library"
-            const val Classpath = "android.tools.build:gradle:$androidGradlePluginVersion"
+            const val Classpath = "com.android.tools.build:gradle:$androidGradlePluginVersion"
         }
         object Serialization {
             const val Id = "org.jetbrains.kotlin.plugin.serialization"
