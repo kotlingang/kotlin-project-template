@@ -5,6 +5,5 @@ import org.gradle.api.Project
 class KotlinJvmConfiguration : Plugin<Project> {
     override fun apply(target: Project) {
         target.plugins.apply(Deps.Plugins.Kotlin.Jvm)
-        target.plugins.apply(Deps.Plugins.Dependencies.Id)
     }
 }
