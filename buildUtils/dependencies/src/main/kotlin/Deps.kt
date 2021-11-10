@@ -177,5 +177,9 @@ object Deps {
         object Application {
             const val Id = "application"
         }
+        object Shadow {
+            const val Classpath = "gradle.plugin.com.github.jengelman.gradle.plugins:shadow:$shadowVer"
+            const val Id = "com.github.johnrengelman.shadow"
+        }
     }
 }
