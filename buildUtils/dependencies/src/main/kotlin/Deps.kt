@@ -1,14 +1,14 @@
 @file:Suppress("FunctionName", "unused")
 
 object Deps {
-    const val compileSdkVersion = 30
+    const val compileSdkVersion = 31
     const val minSdkVersion = 21
     
-    private const val kotlinVersion = "1.5.31"
-    private const val coroutinesVersion = "1.5.2"
-    private const val serializationVersion = "1.3.0"
+    private const val kotlinVersion = "1.6.0"
+    private const val coroutinesVersion = "1.6.0-RC"
+    private const val serializationVersion = "1.3.1"
     private const val nodejsExternalsVersion = "0.0.7"
-    private const val ktorVersion = "1.6.3"
+    private const val ktorVersion = "1.6.5"
     private const val ktorOpenapiVersion = "0.2-beta.20"
     private const val exposedVersion = "0.35.1"
     private const val datetimeVersion = "0.3.0"
@@ -31,7 +31,31 @@ object Deps {
     private const val kvisionVersion = "5.1.1"
     private const val shadowVer = "7.0.0"
 
+    private const val kdsVer = "1.1.0"
+    private const val scriptKtVer = "0.0.2"
+
     object Libs {
+
+        object KotlinGang {
+            object KDS {
+                const val FileDataStorage = "fun.kotlingang.kds:json-files:$kdsVer"
+                const val LocalDataStorage = "fun.kotlingang.kds:json-files:$kdsVer"
+                const val BundleDataStorage = "fun.kotlingang.kds:json-bundle:$kdsVer"
+                object Integrations {
+                    const val Androidx = "fun.kotlingang.kds:extensions-androidx:$kdsVer"
+                    const val Coroutines = "fun.kotlingang.kds:extensions-coroutines:$kdsVer"
+                    const val KVision = "fun.kotlingang.kds:extensions-kvision:$kdsVer"
+                }
+                const val Core = "fun.kotlingang.kds:core:$kdsVer"
+                const val Json = "fun.kotlingang.kds:json:$kdsVer"
+            }
+            object ScriptKt {
+                const val Wrapper = "fun.kotlingang.scriptkt:scriptkt:$scriptKtVer"
+                const val ImportScript = "fun.kotlingang.scriptkt:import-script:$scriptKtVer"
+                const val MavenResolver = "fun.kotlingang.scriptkt:maven-resolver:$scriptKtVer"
+            }
+        }
+
         object KVision {
             const val Core = "io.kvision:kvision:$kvisionVersion"
 
