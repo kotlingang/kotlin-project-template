@@ -4,7 +4,7 @@ object Deps {
     const val compileSdkVersion = 31
     const val minSdkVersion = 21
     
-    private const val kotlinVersion = "1.6.20-M1"
+    private const val kotlinVersion = "1.6.20-RC"
     private const val coroutinesVersion = "1.6.0"
     private const val serializationVersion = "1.3.2"
     private const val nodejsExternalsVersion = "0.0.7"
