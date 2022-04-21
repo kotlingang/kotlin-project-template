@@ -4,11 +4,11 @@ object Deps {
     const val compileSdkVersion = 31
     const val minSdkVersion = 21
     
-    private const val kotlinVersion = "1.6.20-RC2"
-    private const val coroutinesVersion = "1.6.0"
+    private const val kotlinVersion = "1.6.20"
+    private const val coroutinesVersion = "1.6.1"
     private const val serializationVersion = "1.3.2"
     private const val nodejsExternalsVersion = "0.0.7"
-    private const val ktorVersion = "2.0.0-beta-1"
+    private const val ktorVersion = "2.0.0"
     private const val ktorOpenapiVersion = "0.2-beta.20"
     private const val exposedVersion = "0.35.1"
     private const val datetimeVersion = "0.3.0"
@@ -25,14 +25,14 @@ object Deps {
     private const val lifecycleVersion = "2.3.1"
     private const val glideVersion = "4.12.0"
     private const val androidAppCompatVersion = "1.3.1"
-    private const val androidComposeVersion = "1.1.0-alpha04"
+    private const val androidComposeVersion = "1.2.0-alpha08"
     private const val androidGradlePluginVersion = "4.2.2"
 
     private const val kvisionVersion = "5.1.1"
     private const val shadowVer = "7.0.0"
 
     private const val kdsVer = "1.1.0"
-    private const val scriptKtVer = "0.0.4"
+    private const val scriptKtVer = "0.0.5"
 
     object Libs {
 
