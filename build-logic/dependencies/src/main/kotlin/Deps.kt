@@ -156,6 +156,9 @@ object Deps {
         }
     }
     object Plugins {
+        object Deploy {
+            const val Id = "service-deploy"
+        }
         object Configuration {
             object Kotlin {
                 const val Mpp = "k-mpp"
