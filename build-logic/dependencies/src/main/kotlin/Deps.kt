@@ -4,7 +4,7 @@ object Deps {
     const val compileSdkVersion = 31
     const val minSdkVersion = 21
     
-    private const val kotlinVersion = "1.7.0"
+    private const val kotlinVersion = "1.7.10"
     private const val coroutinesVersion = "1.6.2"
     private const val serializationVersion = "1.3.3"
     private const val nodejsExternalsVersion = "0.0.7"
@@ -25,7 +25,7 @@ object Deps {
     private const val lifecycleVersion = "2.3.1"
     private const val glideVersion = "4.12.0"
     private const val androidAppCompatVersion = "1.3.1"
-    private const val androidComposeVersion = "1.2.0-alpha08"
+    private const val androidComposeVersion = "1.3.0-alpha02"
     private const val androidGradlePluginVersion = "4.2.2"
 
     private const val kvisionVersion = "5.1.1"
