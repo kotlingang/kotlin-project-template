@@ -1,3 +1,6 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+enableFeaturePreview("VERSION_CATALOGS")
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -18,7 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "kotlin-project-template"
 
-includeBuild("build-logic/dependencies")
-includeBuild("build-logic/configuration")
-includeBuild("build-logic/service-deploy")
+//includeBuild("buildUtils/service-deploy")
 //includeBuild("buildUtils/library-deploy")
